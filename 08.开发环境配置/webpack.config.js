@@ -1,5 +1,8 @@
 /**
  * 开发环境配置：能让代码运行
+ *  运行项目指令：
+ *      webpack 会将打包结果输出出去
+ *      npx webpack serve 只会在内存中编译打包，没有输出
  */
 
 
@@ -13,6 +16,7 @@ module.exports = {
         path: resolve(__dirname, 'build')
     },
     module: {
+        // loader配置
         rules: [
             {
                 // 处理less资源
